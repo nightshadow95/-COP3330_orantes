@@ -12,6 +12,7 @@ public class Decrypter {
         for(int i=0; i < 4; i++) {
             number[i] =  Integer.parseInt(String.valueOf(Decrypt.charAt(i)));
         }
+        
         return number;
     }
 

@@ -14,7 +14,7 @@ public class Encrypter {
         System.out.println("Encrypts " + "\"" + Encryption + "\"" + " to " + "\"" + MyEncrypter.encrypt(Encryption) + "\"");
 
         System.out.println("This program can also allow users to decrypt messages.");
-        System.out.println("If you would like to use this part of the program then enter the encrypted value or type \"exit\" to exit the program");
+        System.out.println("If you would like to use this part of the program, then enter the encrypted value or type \"exit\" to exit the program");
         String Decryption = scan.nextLine();
 
         if (Decryption.toLowerCase().equals("exit")) {
