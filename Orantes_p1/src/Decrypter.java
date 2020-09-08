@@ -7,9 +7,9 @@ public class Decrypter {
     }
 
     public static int [] ConvertString(String Decrypt) {
-        int [] number = new int[Decrypt.length()];
+        int [] number = new int[4];
 
-        for(int i=0; i < Decrypt.length(); i++) {
+        for(int i=0; i < 4; i++) {
             number[i] =  Integer.parseInt(String.valueOf(Decrypt.charAt(i)));
         }
         return number;
