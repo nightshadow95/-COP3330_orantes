@@ -33,7 +33,7 @@ public class Encrypter {
     public static int [] ConvertString(String Encrypt) {
         int [] number = new int[4];
 
-        for(int i=0; i < 4; i++) {
+        for(int i = 0; i < 4; i++) {
             number[i] =  Integer.parseInt(String.valueOf(Encrypt.charAt(i)));
         }
         return number;

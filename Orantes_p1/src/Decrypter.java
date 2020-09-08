@@ -12,7 +12,7 @@ public class Decrypter {
         for(int i=0; i < 4; i++) {
             number[i] =  Integer.parseInt(String.valueOf(Decrypt.charAt(i)));
         }
-        
+
         return number;
     }
 
@@ -25,7 +25,7 @@ public class Decrypter {
         FinalNumbers[2] = (FirstNumbers[0]+10) -7;
         FinalNumbers[3] = (FirstNumbers[1]+10) -7;
 
-        for (int i=0; i< 4; i++ ){
+        for (int i = 0; i < 4; i++ ){
             if (FinalNumbers[i] >= 10) {
                 FinalNumbers[i] = FinalNumbers[i] - 10;
             }
