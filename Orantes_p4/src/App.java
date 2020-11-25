@@ -48,10 +48,7 @@ public class App {
                     task.setDescription(scan.nextLine());
                     System.out.print("Task due date (yyyy-MM-DD): ");
                     task.setDue_Date(scan.nextLine());
-                    if(!task.getTitle().equals("error") && !task.getDue_Date().equals("error"))
-                    {
-                        T1.SetTaskList(task);
-                    }
+                    T1.SetTaskList(task);
                     System.out.println("\n");
                     NewListMenu();
                     Answer2 = scan.nextInt();
@@ -74,7 +71,7 @@ public class App {
                     }
                     System.out.print("\nWhich tasks will you edit? ");
                     tasknumber = scan.nextInt();
-                    if(tasknumber < 0 || tasknumber > T1.task.size()) {
+                    while(tasknumber < 0 || tasknumber > T1.task.size()-1) {
                         System.out.println("Please enter a valid index: ");
                         tasknumber = scan.nextInt();
                     }
@@ -99,7 +96,7 @@ public class App {
                     System.out.println("\n");
                     System.out.print("Which task will you remove? ");
                     tasknumber = scan.nextInt();
-                    if(tasknumber < 0 || tasknumber > T1.task.size()) {
+                    while(tasknumber < 0 || tasknumber > T1.task.size()) {
                         System.out.println("Please enter a valid index: ");
                         tasknumber = scan.nextInt();
                     }
